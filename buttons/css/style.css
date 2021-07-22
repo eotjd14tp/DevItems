@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@import "../../base/css/font.css";
+
+/* 타입별 버튼 css 정리 */
+* { font-family: 'Cafe24SsurroundAir'; }
+div.wrap { position: relative; height: 100%; padding: 20px; margin: 0 auto; background-color: #f4f4f4; }
+div.innerWrap { width: 1200px; padding: 30px; margin: 0 auto; background-color: #fff; }
+div.head { margin-bottom: 30px; padding-bottom: 30px; text-align: center; border-bottom: 1px solid #ececec; }
+div.head span { font-size: 20px; font-weight: bold; }
+
+div.type { margin-bottom: 30px; }
+div.type div.title { margin-bottom: 20px; }
+div.type div.title span { display: block; font-size: 18px; font-weight: bold; }
+div.type div.title span.desc { margin-top: 5px; font-size: 14px; font-weight: normal; color: #666; }
+div.type div.title span.desc:before { content: '* '; }
+div.type button { position: relative; width: 120px; height: 40px; border-radius: 5px; text-transform: uppercase;}
+div.type button.typeBlack { border: 1px solid #333; }
+div.type button.typeGray { border: 1px solid #888; }
+div.type button.typeRed { border: 1px solid #ED1C24; }
+div.type button.typeBlue { border: 1px solid #3F48CC; }
+div.type button.typeGreen { border: 1px solid #22B14C; }
+div.type button.typeMintReverse { background-color: #2EE59D; color: #fff; }
+div.type button.typeBrown { background-color: #803A0A; border: 1px solid #803A0A; color: #fff; }
+
+div.type button.typeBlack:hover { background-color: #333; color: #fff; }
+div.type button.typeGray:hover { background-color: #888; color: #fff; }
+div.type button.typeRed:hover { background-color: #ED1C24; color: #fff; }
+div.type button.typeBlue:hover { background-color: #3F48CC; color: #fff; }
+div.type button.typeGreen:hover { background-color: #22B14C; color: #fff; }
+div.type button.typeMint:hover { background-color: #2EE59D; color: #fff; }
+div.type button.typeMintReverse:hover { background-color: #fff; color: #2EE59D; }
+/* 1. 기본형 */
+/* 2. hover 시 띄워주는 방식 */
+
+div.type2 button { border-radius: 20px; transition: all .3s; box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); }
+div.type2 button:hover { border: 0; box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4); transform: translateY(-7px); }
+
+/* 3. border주는 방식 */
+
+div.type3 button { border-radius: 0; background-color: #2EE59D; transition: all .4s;  }
+div.type3 button:hover { border: 0; }
+div.type3 button:before, div.type3 button:after { content: ''; position: absolute; top: 0; right: 0; height: 2px; width: 0; background: #2EE59D; transition: .4s ease all; }
+div.type3 button:after { right: inherit; top: inherit; left: 0; bottom: 0; }
+div.type3 button:hover:before, div.type3 button:hover:after { width: 100%; transition: .8s ease all; }
+
+/* 4. border 주는 방식2 */
+
+div.type4 button { border-radius: 0; transition: all .3s;  }
+div.type4 button:before, div.type4 button:after { content: ''; position: absolute; width: 15px; height: 15px; border-width: 0; border-style: solid; transition: all .2s; }
+div.type4 button:before { border-color: #803A0A; border-right-width: 2px; border-top-width: 2px; right: -5px; top: -5px; }
+div.type4 button:after { border-color: #803A0A; border-left-width: 2px; border-bottom-width: 2px; bottom: -5px; left: -5px; }
+div.type4 button:hover:before, div.type4 button:hover:after { width: 100%; height: 100%; }
+
+/* 끗 */
