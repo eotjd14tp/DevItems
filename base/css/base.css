@@ -2,8 +2,11 @@
 
 /* 모든 파일에 들어가는 base css */
 
-
-
-
-
+* { box-sizing: border-box; }
+body { margin: 0; }
+ul { padding: 0; margin: 0; }
+li { list-style: none; }
+button { background-color: #fff; border: 1px solid #ececec; }
+a { text-decoration: none; color: #333; }
+a:hover { color: #333; text-decoration: none; }
 /* 끗 */
