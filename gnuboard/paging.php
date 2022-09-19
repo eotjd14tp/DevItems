@@ -1,5 +1,5 @@
 // 그누보드 게시판 페이징
-// ver 1.0
+// ver 1.0 
 // 게시글이 1개 있어도 페이징이 뜰 수 있게 처리
 // 다음 페이징이 없어도 다음 페이지를 누르면 2페이지로 가는 오류 있음
 function get_paging($write_pages, $cur_page, $total_page, $url, $add="") {
